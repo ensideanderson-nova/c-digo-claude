@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSIDE SISTEMA - Anderson Enside</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .container { max-width: 800px; width: 100%; }
+        .panel { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
+        h1 { color: #667eea; font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+        .cards { display: grid; gap: 20px; margin-top: 30px; }
+        .card { background: linear-gradient(135deg, #f5f7fa, #e8ecf1); padding: 25px; border-radius: 15px; text-decoration: none; color: #333; transition: all 0.3s; border: 2px solid transparent; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-color: #667eea; }
+        .card h3 { color: #667eea; margin-bottom: 10px; font-size: 1.3em; }
+        .card p { color: #666; line-height: 1.5; }
+        .card .version { display: inline-block; background: #667eea; color: white; padding: 3px 12px; border-radius: 15px; font-size: 0.8em; margin-top: 10px; }
+        .card.main { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .card.main h3, .card.main p { color: white; }
+        .card.main .version { background: rgba(255,255,255,0.3); }
+        .footer { margin-top: 30px; color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1>ENSIDE SISTEMA</h1>
+            <p class="subtitle">Anderson Enside | Grupo Lider Madeiras</p>
+
+            <div class="cards">
+                <a href="ENSIDE_DATABASE_v5.html" class="card main">
+                    <h3>ENSIDE DATABASE</h3>
+                    <p>Sistema completo com Agente IA, importacao inteligente, listas de transmissao, tarefas e muito mais!</p>
+                    <span class="version">v5.0 - PRINCIPAL</span>
+                </a>
+
+                <a href="ENSIDE_IMPORTADOR_ANDERSON_v4.html" class="card">
+                    <h3>Importador Anderson</h3>
+                    <p>Importador otimizado para seus arquivos CSV com separador ponto-e-virgula.</p>
+                    <span class="version">v4.0</span>
+                </a>
+
+                <a href="ENSIDE_IMPORTADOR_UNIVERSAL_v3.html" class="card">
+                    <h3>Importador Universal</h3>
+                    <p>Versao generica do importador para diferentes formatos de arquivo.</p>
+                    <span class="version">v3.0</span>
+                </a>
+            </div>
+
+            <p class="footer">Clique em um sistema para abrir</p>
+        </div>
+    </div>
+</body>
+</html>

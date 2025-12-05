@@ -1,111 +1,101 @@
-# 🧠 ENSIDE SISTEMA IMPORTADOR UNIVERSAL v3.0
-
-## Anderson Enside | Grupo Líder Madeiras
+# ENSIDE SISTEMA - Anderson Enside | Grupo Lider Madeiras
 
 ---
 
-## 📦 Arquivos Incluídos
+## Arquivos Disponiveis
 
-| Arquivo | Descrição |
-|---------|-----------|
-| `ENSIDE_IMPORTADOR_UNIVERSAL_v3.html` | Sistema principal de importação e triagem |
-| `README_INSTALACAO.md` | Este arquivo de instruções |
+| Arquivo | Versao | Descricao |
+|---------|--------|-----------|
+| `ENSIDE_DATABASE_v5.html` | v5.0 | **PRINCIPAL** - Sistema completo com Agente IA |
+| `ENSIDE_IMPORTADOR_ANDERSON_v4.html` | v4.0 | Importador otimizado para CSVs do Anderson |
+| `ENSIDE_IMPORTADOR_UNIVERSAL_v3.html` | v3.0 | Importador generico |
+| `index.html` | - | Pagina inicial com links |
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
-### Passo 1: Baixar o Arquivo
-Baixe o arquivo `ENSIDE_IMPORTADOR_UNIVERSAL_v3.html` para seu Mac.
+### Passo 1: Baixar
+Baixe o arquivo `ENSIDE_DATABASE_v5.html` para seu Mac.
 
-### Passo 2: Abrir no Navegador
+### Passo 2: Abrir
 Clique 2x no arquivo ou arraste para o Chrome/Safari.
 
-### Passo 3: Importar seus Dados
-1. Clique na área de upload
-2. Selecione seu arquivo CSV ou Excel
-3. Clique em "INICIAR TRIAGEM AUTOMÁTICA"
+### Passo 3: Importar
+1. Clique na area de upload
+2. Selecione seu arquivo CSV
+3. Clique em "INICIAR TRIAGEM AUTOMATICA"
 
 ---
 
-## 🔀 Ordem de Triagem
+## ENSIDE DATABASE v5 - Funcionalidades
 
-O sistema segue a ordem configurada por Anderson:
+### Abas Disponiveis
+- **Importar** - Upload de arquivos CSV/Excel
+- **Cadastrar** - Cadastro manual de contatos
+- **Clientes** - Lista de clientes com busca
+- **Fornecedores** - Lista de fornecedores
+- **Motoristas** - Lista de motoristas/fretes
+- **Listas** - Listas de transmissao WhatsApp (max 256)
+- **Analise** - Dashboard com estatisticas
+- **Agente IA** - Chat inteligente com comandos
+- **Tarefas** - Gerenciador de tarefas com prioridades
+- **Aprendizado** - Base de conhecimento do agente
+- **WhatsApp** - Monitoramento de conversas
+- **Exportar** - Exportacao CSV/JSON
+
+### Comandos do Agente IA
+- `resumo` - Status geral do sistema
+- `quantos clientes?` - Contagem por categoria
+- `buscar [nome]` - Procurar contato
+- `clientes de SP` - Filtrar por estado
+- `analise` - Insights e metricas
+- `dica` - Sugestoes do agente
+- `ajuda` - Lista de comandos
+
+---
+
+## Ordem de Triagem
 
 1. **FRETES/MOTORISTAS** (primeiro)
-   - Palavras-chave: frete, entrega, transporte, motorista, caminhão, etc.
+   - Palavras: frete, motorista, transportadora, caminhao, carreta
 
 2. **FORNECEDORES** (segundo)
-   - Palavras-chave: serraria, fornecedor, madeireira, indústria, etc.
+   - Palavras: madeireira, serraria, marcenaria, fabrica, industria
 
 3. **CLIENTES** (o que sobrar)
-   - Identificados por estados: SP, RJ, MG, PR, SC, etc.
 
 ---
 
-## 📊 Funcionalidades
+## Formato CSV Suportado
 
-### Importação
-- CSV, Excel (.xlsx, .xls), JSON, TXT
-- Detecção automática de separadores
-- Preview antes de processar
-
-### Triagem
-- Configuração de palavras-chave
-- Ordem personalizável
-- Detecção de estados
-
-### Visualização
-- Abas por categoria (Clientes, Fornecedores, Motoristas, Fretes)
-- Busca em tempo real
-- Estatísticas detalhadas
-
-### WhatsApp
-- Lista de contatos com WhatsApp
-- Envio de mensagens em massa
-- Links diretos para conversa
-
-### Exportação
-- CSV por categoria
-- JSON completo
-- Relatório em texto
+O sistema detecta automaticamente:
+- Separador `;` (padrao Anderson) ou `,`
+- Colunas: des_nome, num_celular, tpo_parceiro, etc.
+- Encoding UTF-8
 
 ---
 
-## 💾 Persistência
+## Persistencia
 
-Os dados são salvos automaticamente no navegador (localStorage).
-Ao fechar e abrir novamente, seus dados estarão lá.
+Dados salvos no navegador (localStorage).
+Chave: `enside_db_v5`
 
 ---
 
-## 📍 Localização Recomendada no Mac
+## Localizacao Recomendada no Mac
 
 ```
 ~/Enside_Master/
-└── Sistema_Importador_Inteligente/
+└── ENSIDE_SISTEMA/
+    ├── ENSIDE_DATABASE_v5.html      <- USAR ESTE
+    ├── ENSIDE_IMPORTADOR_ANDERSON_v4.html
     ├── ENSIDE_IMPORTADOR_UNIVERSAL_v3.html
     └── README_INSTALACAO.md
 ```
 
 ---
 
-## 🎨 Cores das Pastas (macOS)
-
-| Nível | Cor |
-|-------|-----|
-| Pasta Mestre | Cinza Escuro (#2C3E50) |
-| Subpastas | Cinza Médio (#5D6D7B) |
-| Sub-subpastas | Cinza Claro (#7F8C8D) |
-
----
-
-## 🆘 Suporte
-
-Criado e mantido por **Anderson Enside**
-Grupo Líder Madeiras
-
----
-
-**Versão:** 3.0
+**Versao:** 5.0
 **Data:** 2024
+**Criado por:** Anderson Enside - Grupo Lider Madeiras
