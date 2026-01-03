@@ -35,13 +35,13 @@ jobs:
           1. Fetch all open issues updated in the last 3 days:
              - Use mcp__github__list_issues with:
                - state="open"
-               - first=5 (fetch only 5 issues per page)
-               - orderBy="UPDATED_AT"
-               - direction="DESC"
+               - per_page=5 (fetch only 5 issues per page)
+               - sort="updated"
+               - direction="desc"
              - This will give you the most recently updated issues first
              - For each page of results, check the updatedAt timestamp of each issue
              - Add issues updated within the last 3 days (72 hours) to your TODO list as you go
-             - Keep paginating using the 'after' parameter until you encounter issues older than 3 days
+             - Keep paginating using the 'page' parameter (page=1, page=2, etc.) until you encounter issues older than 3 days
              - Once you hit issues older than 3 days, you can stop fetching (no need to fetch all open issues)
 
           2. Build your TODO list incrementally as you fetch:
